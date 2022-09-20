@@ -1,0 +1,33 @@
+.tg  {border-collapse:collapse;margin: auto}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;word-break:normal;width: 60px;height: 40px;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;height: 50px;
+  font-weight:normal;overflow:hidden;padding:5px;word-break:normal;text-align: center;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-dvpl{border-color:inherit;text-align:right;vertical-align:top}
+button{
+    width: 60px;height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+.tg .tg-c3ow #samad{
+    width: 123px;
+}
+.tg .tg-dvpl .history{
+    width: 235px;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    font-weight: 200;
+    text-align: right;
+    margin-bottom: 5px;
+}
+.tg .tg-dvpl .hasil{
+    width: 235px;
+    background-color: white;
+    border: none;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 600;
+}
