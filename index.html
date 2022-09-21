@@ -10,43 +10,45 @@
 </head>
 <body>
     <script defer src="main.js"></script>
-    <table class="tg">
-        <thead>
-          <tr>
-            <th class="tg-dvpl" colspan="12"><input id="history" class="history" disabled type="text" > <br> <input id="hasil" class="hasil" disabled type="text"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="tg-c3ow" colspan="3"><button id="onoff">on/off</button></td>
-            <td class="tg-c3ow" colspan="3"><button onclick="reset()" id="reset">AC</button></td>
-            <td class="tg-c3ow" colspan="3"><button id="hapus" onclick="hapus()">DEL</button></td>
-            <td class="tg-c3ow" colspan="3"><button id="/" onclick="tampilOperator('/')">/</button></td>
-          </tr>
-          <tr>
-            <td class="tg-c3ow" colspan="3"><button id="satu" onclick="tampil('1')">1</button></td>
-            <td class="tg-c3ow" colspan="3"><button id="2"onclick="tampil('2')" >2</button></td>
-            <td class="tg-c3ow" colspan="3"><button id="3" onclick="tampil('3')">3</button></td>
-            <td class="tg-c3ow" colspan="3"><button id="*" onclick="tampilOperator('*')">*</button></td>
-          </tr>
-          <tr>
-            <td class="tg-c3ow" colspan="3"><button  id="4" onclick="tampil('4')">4</button></td>
-            <td class="tg-c3ow" colspan="3"><button id="5" onclick="tampil('5')">5</button></td>
-            <td class="tg-c3ow" colspan="3"><button id="6" onclick="tampil('6')">6</button></td>
-            <td class="tg-c3ow" colspan="3"><button id="+" onclick="tampilOperator('+')" >+</button></td>
-          </tr>
-          <tr>
-            <td class="tg-c3ow" colspan="3"><button id="7" onclick="tampil('7')">7</button></td>
-            <td class="tg-c3ow" colspan="3"><button id="8" onclick="tampil('8')">8</button></td>
-            <td class="tg-c3ow" colspan="3"><button id="9" onclick="tampil('9')">9</button></td>
-            <td class="tg-c3ow" colspan="3"><button id="-" onclick="tampilOperator('-')">-</button></td>
-          </tr>
-          <tr>
-            <td class="tg-c3ow" colspan="3"><button id="."onclick="tampil('.')">.</button></td>
-            <td class="tg-c3ow" colspan="3"><button id="0" onclick="tampil('0')">0</button></td>
-            <td class="tg-c3ow"  colspan="6"><button onclick="samadengan()" id="samad">=</button></td>
-          </tr>
-        </tbody>
-        </table>
+        <table class="tg">
+          <thead>
+            <tr>
+              <th class="tg-lqy6" colspan="12"><input placeholder="0" id="val" disabled type="text"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tg-baqh" colspan="2"><button>onoff</button></td>
+              <td class="tg-baqh" colspan="2"><button onclick="tampil('(')">(</button></td>
+              <td class="tg-baqh" colspan="2"><button onclick="tampil(')')">)</button></td>
+              <td class="tg-baqh" colspan="2"><button onclick="reset()">AC</button></td>
+              <td class="tg-baqh" colspan="2"><button onclick="del()">DEL</button></td>
+              <td class="tg-baqh" colspan="2"><button onclick="tampil('/')">&#8725;</button></td>
+            </tr>
+            <tr>
+              <td class="tg-baqh" colspan="2" onclick="tampil('1')"><button>1</button></td>
+              <td class="tg-baqh" colspan="2" onclick="tampil('2')"><button>2</button></td>
+              <td class="tg-baqh" colspan="2" onclick="tampil('3')"><button>3</button></td>
+              <td class="tg-baqh" colspan="2" onclick="tampil('4')"><button>4</button></td>
+              <td class="tg-baqh" colspan="2" onclick="tampil('5')"><button>5</button></td>
+              <td class="tg-baqh" colspan="2" onclick="tampil('*')"><button>&lowast;</button></td>
+            </tr>
+            <tr>
+              <td class="tg-baqh" colspan="2" onclick="tampil('6')"><button>6</button></td>
+              <td class="tg-baqh" colspan="2" onclick="tampil('7')"><button>7</button></td>
+              <td class="tg-baqh" colspan="2" onclick="tampil('8')"><button>8</button></td>
+              <td class="tg-baqh" colspan="2" onclick="tampil('9')"><button>9</button></td>
+              <td class="tg-baqh" colspan="2" onclick="tampil('0')"><button>0</button></td>
+              <td class="tg-baqh" colspan="2" rowspan="2"><button onclick="equal()" id="samad">=</button></td>
+            </tr>
+            <tr>
+              <td class="tg-baqh" colspan="2"><button onclick="tampil('.')">.</button></td>
+              <td class="tg-baqh" colspan="2"><button onclick="tampil('%')">MOD</button></td>
+              <td class="tg-baqh" colspan="2"><button onclick="tampil('**')">^x</button></td>
+              <td class="tg-baqh" colspan="2"><button onclick="tampil('+')">&plus;</button></td>
+              <td class="tg-baqh" colspan="2"><button onclick="tampil('-')">&minus;</button></td>
+            </tr>
+          </tbody>
+          </table>
 </body>
 </html>

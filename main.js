@@ -1,41 +1,29 @@
 
-let hasil = document.getElementById("hasil");
-let history = document.getElementById("history");
-let temp = null;
+let val = document.getElementById("val");
 
-let equal = document.getElementById("samad");
-
+function onoff() {
+    
+}
 function reset() {
-    hasil.value = null;
-    temp = null;
+    val.value = null;
 }
 function tampil(val) {
-    temp = null;
-    document.getElementById("hasil").value +=val;
+    document.getElementById("val").value +=val;
 }
-function tampilOperator(valu) {
-    if (temp == null) {
-        document.getElementById("hasil").value +=valu;
-        temp = valu;
+
+function del() {
+    val.value = (val.value).substring(0,((val.value).length)-1);
+}
+
+function equal() {
+    if (val. value == "") {
+        alert("empty formula")
     }else{
-        if (temp == valu) {
-            return hasil.value;
-        }else{
-            hasil.value = (hasil.value).substring(0,((hasil.value).length)-1);
-            document.getElementById("hasil").value +=valu;
-            temp = valu;
+        try {
+            val.value = eval(val.value);
+        } catch (err) {
+            alert("wrong formula, or try using '(_)'")
         }
     }
-
-    
 }
-function hapus() {
-    hasil.value = (hasil.value).substring(0,((hasil.value).length)-1);
-}
-
-function samadengan() {
-    hasil.value = eval(hasil.value);
-    
-}
-
 
